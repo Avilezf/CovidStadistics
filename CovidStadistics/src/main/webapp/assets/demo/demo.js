@@ -209,6 +209,8 @@ demo = {
       }
     };
 
+
+    //World Cases
     var ctx = document.getElementById('bigDashboardChart').getContext("2d");
 
     var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);

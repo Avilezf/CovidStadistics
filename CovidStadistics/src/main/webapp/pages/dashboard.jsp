@@ -94,6 +94,8 @@
                     </div>
                 </nav>
                 <!-- End Navbar -->
+                
+                <!-- World Cases Year -->
                 <div class="panel-header panel-header-lg">
                     <canvas id="bigDashboardChart"></canvas>
                 </div>
@@ -178,81 +180,101 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card  card-tasks">
-                                <div class="card-header ">
-                                    <h5 class="card-category">Backend development</h5>
-                                    <h4 class="card-title">Tasks</h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-category">All Persons List</h5>
+                                    <h4 class="card-title"> Employees Stats</h4>
                                 </div>
-                                <div class="card-body ">
-                                    <div class="table-full-width table-responsive">
+                                <div class="card-body">
+                                    <div class="table-responsive">
                                         <table class="table">
+                                            <thead class=" text-primary">
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Country
+                                            </th>
+                                            <th>
+                                                City
+                                            </th>
+                                            <th class="text-right">
+                                                Salary
+                                            </th>
+                                            </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                <span class="form-check-sign"></span>
-                                                            </label>
-                                                        </div>
+                                                        Dakota Rice
                                                     </td>
-                                                    <td class="text-left">Sign contract for "What are conference organizers afraid of?"</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                                                            <i class="now-ui-icons ui-2_settings-90"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                                                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                                                        </button>
+                                                    <td>
+                                                        Niger
+                                                    </td>
+                                                    <td>
+                                                        Oud-Turnhout
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $36,738
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox">
-                                                                <span class="form-check-sign"></span>
-                                                            </label>
-                                                        </div>
+                                                        Minerva Hooper
                                                     </td>
-                                                    <td class="text-left">Lines From Great Russian Literature? Or E-mails From My Boss?</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                                                            <i class="now-ui-icons ui-2_settings-90"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                                                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                                                        </button>
+                                                    <td>
+                                                        Curaçao
+                                                    </td>
+                                                    <td>
+                                                        Sinaai-Waas
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $23,789
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                <span class="form-check-sign"></span>
-                                                            </label>
-                                                        </div>
+                                                        Sage Rodriguez
                                                     </td>
-                                                    <td class="text-left">Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                                                    <td>
+                                                        Netherlands
                                                     </td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
-                                                            <i class="now-ui-icons ui-2_settings-90"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
-                                                            <i class="now-ui-icons ui-1_simple-remove"></i>
-                                                        </button>
+                                                    <td>
+                                                        Baileux
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $56,142
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Doris Greene
+                                                    </td>
+                                                    <td>
+                                                        Malawi
+                                                    </td>
+                                                    <td>
+                                                        Feldkirchen in Kärnten
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $63,542
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Mason Porter
+                                                    </td>
+                                                    <td>
+                                                        Chile
+                                                    </td>
+                                                    <td>
+                                                        Gloucester
+                                                    </td>
+                                                    <td class="text-right">
+                                                        $78,615
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                                <div class="card-footer ">
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
                                     </div>
                                 </div>
                             </div>
@@ -364,17 +386,17 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="https://www.creative-tim.com">
-                                        Creative Tim
+                                    <a href="">
+                                        BNT SAS
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://presentation.creative-tim.com">
+                                    <a href="">
                                         About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://blog.creative-tim.com">
+                                    <a href="">
                                         Blog
                                     </a>
                                 </li>
@@ -383,7 +405,7 @@
                         <div class="copyright" id="copyright">
                             &copy; <script>
                                 document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                            </script>, Designed by <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                            </script>, Designed by <a href="" target="_blank">Fenix Design / BNT</a>. Coded by <a href="" target="_blank">Black Team / BNT </a>.
                         </div>
                     </div>
                 </footer>
