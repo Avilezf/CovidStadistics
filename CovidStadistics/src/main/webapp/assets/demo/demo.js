@@ -104,7 +104,7 @@ demo = {
     });
   },
 
-  initDashboardPageCharts: function() {
+  initDashboardPageCharts: function(args, col, det, nom, tot) {
 
     chartColor = "#FFFFFF";
 
@@ -224,9 +224,9 @@ demo = {
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
         datasets: [{
-          label: "Data",
+          label: "Infectados en el mundo",
           borderColor: chartColor,
           pointBorderColor: chartColor,
           pointBackgroundColor: "#1e3d60",
@@ -239,7 +239,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+          data: [args[0],args[1],args[2],args[3],args[4],args[5],args[6]]
         }]
       },
       options: {
@@ -318,9 +318,9 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
         datasets: [{
-          label: "Active Users",
+          label: "Número de muertos",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",
@@ -331,7 +331,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [det[0],det[1],det[2],det[3],det[4],det[5],det[6]]
         }]
       },
       options: gradientChartOptionsConfiguration
@@ -352,9 +352,9 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
         datasets: [{
-          label: "Email Stats",
+          label: "Número de Infectados",
           borderColor: "#18ce0f",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#18ce0f",
@@ -365,7 +365,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+          data: [col[0],col[1],col[2],col[3],col[4],col[5],col[6]]
         }]
       },
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
@@ -380,7 +380,7 @@ demo = {
     var a = {
       type: "bar",
       data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        labels: [nom[0],nom[1],nom[2],nom[3],nom[4],nom[5],nom[6],nom[7],nom[8],nom[9],nom[10],nom[11],nom[12],nom[13],nom[14]],
         datasets: [{
           label: "Active Countries",
           backgroundColor: gradientFill,
@@ -393,7 +393,7 @@ demo = {
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155]
+          data: [tot[0],tot[1],tot[2],tot[3],tot[4],tot[5],tot[6],tot[7],tot[8],tot[9],tot[10],tot[11],tot[12],tot[13],tot[14]]
         }]
       },
       options: {

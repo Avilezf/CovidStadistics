@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +15,7 @@
         <title>
             CovidStadistics
         </title>
-        
+
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -28,7 +29,7 @@
 
     <body class="">
         <div class="wrapper ">
-            
+
             <div class="main-panel" id="main-panel">
                 <!-- Navbar -->
                 <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
@@ -41,7 +42,7 @@
                                     <span class="navbar-toggler-bar bar3"></span>
                                 </button>
                             </div>
-                            <a class="navbar-brand" href="#pablo">Dashboard</a>
+                            <h1><a class="navbar-brand" href="#pablo">Estadísticas mundiales del Covid-19</a></h1>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -94,7 +95,7 @@
                     </div>
                 </nav>
                 <!-- End Navbar -->
-                
+
                 <!-- World Cases Year -->
                 <div class="panel-header panel-header-lg">
                     <canvas id="bigDashboardChart"></canvas>
@@ -104,8 +105,8 @@
                         <div class="col-lg-4">
                             <div class="card card-chart">
                                 <div class="card-header">
-                                    <h5 class="card-category">Global Sales</h5>
-                                    <h4 class="card-title">Shipped Products</h4>
+                                    <h5 class="card-category">Covid - 19</h5>
+                                    <h4 class="card-title">Muertos en Colombia</h4>
                                     <div class="dropdown">
                                         <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
                                             <i class="now-ui-icons loader_gear"></i>
@@ -125,7 +126,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+                                        <i class="now-ui-icons arrows-1_refresh-69"></i> Última actualización en Julio
                                     </div>
                                 </div>
                             </div>
@@ -133,8 +134,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="card card-chart">
                                 <div class="card-header">
-                                    <h5 class="card-category">2018 Sales</h5>
-                                    <h4 class="card-title">All products</h4>
+                                    <h5 class="card-category">kaggle 2020</h5>
+                                    <h4 class="card-title">Infectados en Colombia</h4>
                                     <div class="dropdown">
                                         <button type="button" class="btn btn-round btn-outline-default dropdown-toggle btn-simple btn-icon no-caret" data-toggle="dropdown">
                                             <i class="now-ui-icons loader_gear"></i>
@@ -154,7 +155,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
+                                        <i class="now-ui-icons arrows-1_refresh-69"></i> Última actualización en Julio
                                     </div>
                                 </div>
                             </div>
@@ -162,8 +163,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="card card-chart">
                                 <div class="card-header">
-                                    <h5 class="card-category">Email Statistics</h5>
-                                    <h4 class="card-title">24 Hours Performance</h4>
+                                    <h5 class="card-category">database 2020</h5>
+                                    <h4 class="card-title">Infectados en América</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area">
@@ -172,7 +173,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="now-ui-icons ui-2_time-alarm"></i> Last 7 days
+                                        <i class="now-ui-icons ui-2_settings-90"></i>  Última actualización en Julio
                                     </div>
                                 </div>
                             </div>
@@ -182,97 +183,43 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-category">All Persons List</h5>
-                                    <h4 class="card-title"> Employees Stats</h4>
+                                    <h5 class="card-category">Categoría Países</h5>
+                                    <h4 class="card-title">Países con más infectados</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table">
-                                            <thead class=" text-primary">
+                                            <thead class="text-danger">
                                             <th>
-                                                Name
+                                                País
                                             </th>
                                             <th>
-                                                Country
-                                            </th>
-                                            <th>
-                                                City
+                                                Continente
                                             </th>
                                             <th class="text-right">
-                                                Salary
+                                                Confirmados
+                                            </th>
+                                            <th class="text-right">
+                                                Muertos
                                             </th>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        Dakota Rice
-                                                    </td>
-                                                    <td>
-                                                        Niger
-                                                    </td>
-                                                    <td>
-                                                        Oud-Turnhout
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $36,738
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Minerva Hooper
-                                                    </td>
-                                                    <td>
-                                                        Curaçao
-                                                    </td>
-                                                    <td>
-                                                        Sinaai-Waas
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $23,789
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Sage Rodriguez
-                                                    </td>
-                                                    <td>
-                                                        Netherlands
-                                                    </td>
-                                                    <td>
-                                                        Baileux
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $56,142
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Doris Greene
-                                                    </td>
-                                                    <td>
-                                                        Malawi
-                                                    </td>
-                                                    <td>
-                                                        Feldkirchen in Kärnten
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $63,542
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
+                                                <c:forEach var="maxinfect" items="${maxinfected}">
+                                                    <tr>
+                                                        <td>
+                                                            ${maxinfect.country}
+                                                        </td>
+                                                        <td>
+                                                            ${maxinfect.whoregion}
+                                                        </td>
+                                                        <td class="text-right">
+                                                            ${maxinfect.total}
+                                                        </td>
+                                                        <td class="text-right">
+                                                            ${maxinfect.deaths}
+                                                        </td>
+                                                    </tr>
+                                                </c:forEach>
                                             </tbody>
                                         </table>
                                     </div>
@@ -282,97 +229,44 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-category">All Persons List</h5>
-                                    <h4 class="card-title"> Employees Stats</h4>
+                                    <h5 class="card-category">Categoría Países</h5>
+                                    <h4 class="card-title"> Países con menos infectados</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table">
-                                            <thead class=" text-primary">
+                                            <thead class="text-success">
                                             <th>
-                                                Name
+                                                País
                                             </th>
                                             <th>
-                                                Country
-                                            </th>
-                                            <th>
-                                                City
+                                                Continente
                                             </th>
                                             <th class="text-right">
-                                                Salary
+                                                Confirmados
+                                            </th>
+                                            <th class="text-right">
+                                                Muertos
                                             </th>
                                             </thead>
+
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        Dakota Rice
-                                                    </td>
-                                                    <td>
-                                                        Niger
-                                                    </td>
-                                                    <td>
-                                                        Oud-Turnhout
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $36,738
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Minerva Hooper
-                                                    </td>
-                                                    <td>
-                                                        Curaçao
-                                                    </td>
-                                                    <td>
-                                                        Sinaai-Waas
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $23,789
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Sage Rodriguez
-                                                    </td>
-                                                    <td>
-                                                        Netherlands
-                                                    </td>
-                                                    <td>
-                                                        Baileux
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $56,142
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Doris Greene
-                                                    </td>
-                                                    <td>
-                                                        Malawi
-                                                    </td>
-                                                    <td>
-                                                        Feldkirchen in Kärnten
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $63,542
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-right">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
+                                                <c:forEach var="lessinfect" items="${lessinfected}">
+                                                    <tr>
+                                                        <td>
+                                                            ${lessinfect.country}
+                                                        </td>
+                                                        <td>
+                                                            ${lessinfect.whoregion}
+                                                        </td>
+                                                        <td class="text-right">
+                                                            ${lessinfect.total}
+                                                        </td>
+                                                        <td class="text-right">
+                                                            ${lessinfect.deaths}
+                                                        </td>
+                                                    </tr>
+                                                </c:forEach>
                                             </tbody>
                                         </table>
                                     </div>
@@ -416,8 +310,6 @@
         <script src="./assets/js/core/popper.min.js"></script>
         <script src="./assets/js/core/bootstrap.min.js"></script>
         <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-
-
         <!-- Chart JS -->
         <script src="./assets/js/plugins/chartjs.min.js"></script>
         <!--  Notifications Plugin    -->
@@ -425,10 +317,24 @@
         <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
         <script src="./assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
         <script src="./assets/demo/demo.js"></script>
+
         <script>
                                 $(document).ready(function () {
                                     // Javascript method's body can be found in assets/js/demos.js
-                                    demo.initDashboardPageCharts();
+                                    const l0 = ${y.get(0).count};
+                                    const l1 = ${y.get(1).count};
+                                    const l2 = ${y.get(2).count};
+                                    const l3 = ${y.get(3).count};
+                                    const l4 = ${y.get(4).count};
+                                    const l5 = ${y.get(5).count};
+                                    const l6 = ${y.get(6).count};
+                                    const args = [l0, l1, l2, l3, l4, l5, l6];
+
+                                    const col = [${c.get(0).count},${c.get(1).count},${c.get(2).count},${c.get(3).count},${c.get(4).count},${c.get(5).count},${c.get(6).count}];
+                                    const det = [${d.get(0).deaths},${d.get(1).deaths},${d.get(2).deaths},${d.get(3).deaths},${d.get(4).deaths},${d.get(5).deaths},${d.get(6).deaths}];
+                                    const nom = ["${a.get(0).country}","${a.get(1).country}","${a.get(2).country}","${a.get(3).country}","${a.get(4).country}","${a.get(5).country}","${a.get(6).country}","${a.get(7).country}","${a.get(8).country}","${a.get(9).country}","${a.get(10).country}","${a.get(11).country}","${a.get(12).country}","${a.get(13).country}","${a.get(14).country}"];
+                                    const tot = [${b.get(0).confirmed},${b.get(1).confirmed},${b.get(2).confirmed},${b.get(3).confirmed},${b.get(4).confirmed},${b.get(5).confirmed},${b.get(6).confirmed},${b.get(7).confirmed},${b.get(8).confirmed},${b.get(9).confirmed},${b.get(10).confirmed},${b.get(11).confirmed},${b.get(12).confirmed},${b.get(13).confirmed},${b.get(14).confirmed}];
+                                    demo.initDashboardPageCharts(args, col, det, nom, tot);
 
                                 });
         </script>
